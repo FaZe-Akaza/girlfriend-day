@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>For My Favorite Person ❤️</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+INTRO
+========================== -->
+
+<div id="intro">
+
+    <div class="black-screen"></div>
+
+    <div id="petal-container"></div>
+
+    <video id="flowerVideo"
+           autoplay
+           muted
+           loop
+           playsinline>
+
+        <source src="assets/videos/open.mp4"
+                type="video/mp4">
+
+    </video>
+
+    <div id="introText">
+
+        <h1>Happy Girlfriend's Day ❤️</h1>
+
+        <p>There's something I made just for you...</p>
+
+        <button id="enterBtn">
+
+            Open My Heart ❤️
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- =========================
+MAIN WEBSITE
+========================== -->
+
+<div id="website">
+
+<header>
+
+<h1 class="title">
+
+For The Most Beautiful Girl 🌸
+
+</h1>
+
+<p class="subtitle">
+
+Every flower reminds me of you.
+
+</p>
+
+</header>
+
+<!-- HERO -->
+
+<section class="fadeUp">
+
+<h2>
+
+You make every ordinary day magical.
+
+</h2>
+
+<div class="glass-card">
+
+<p>
+
+From the moment you entered my life...
+
+everything changed.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- MEMORIES -->
+
+<section
+id="gallery"
+class="fadeUp">
+
+<h2>
+
+Our Memories ✨
+
+</h2>
+
+<div
+class="memory-stage"
+id="memoryGrid">
+
+</div>
+
+<div
+class="memory-progress"
+id="memoryProgress">
+
+</div>
+
+</section>
+
+<!-- GIFTS -->
+
+<section
+id="gifts"
+class="fadeUp">
+
+<h2>
+
+🎁 Gifts For You
+
+</h2>
+
+<div class="gifts-grid">
+
+<div class="giftBox" data-gift="letter">
+
+<span class="giftBox-icon">💌</span>
+
+<h3>
+
+Open When...
+
+</h3>
+
+<p>
+
+A letter, just for you.
+
+</p>
+
+<span class="giftBox-hint">Tap to open</span>
+
+</div>
+
+<div class="giftBox" data-gift="stars">
+
+<span class="giftBox-icon">🌌</span>
+
+<h3>
+
+A Little Sky
+
+</h3>
+
+<p>
+
+Tap a star, learn something new.
+
+</p>
+
+<span class="giftBox-hint">Tap to open</span>
+
+</div>
+
+<div class="giftBox" data-gift="flowers">
+
+<span class="giftBox-icon">💐</span>
+
+<h3>
+
+For You
+
+</h3>
+
+<p>
+
+A small bouquet and something true.
+
+</p>
+
+<span class="giftBox-hint">Tap to open</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= 
+GIFT MODALS 
+========================== -->
+
+<div class="giftModal" id="letterModal">
+
+<div class="modal-inner letter-inner">
+
+<button class="closeGift">✕</button>
+
+<p id="letterTyping"></p>
+
+</div>
+
+</div>
+
+<div class="giftModal" id="starsModal">
+
+<div class="modal-inner stars-inner">
+
+<button class="closeGift">✕</button>
+
+<h3>Tap a star ✨</h3>
+
+<div class="sky">
+
+<span class="star">⭐</span>
+<span class="star">⭐</span>
+<span class="star">⭐</span>
+<span class="star">⭐</span>
+<span class="star">⭐</span>
+<span class="star">⭐</span>
+<span class="star">⭐</span>
+<span class="star">⭐</span>
+
+</div>
+
+<div id="factBox">Tap any star to reveal a fun fact 🌠</div>
+
+</div>
+
+</div>
+
+<div class="giftModal" id="flowersModal">
+
+<div class="modal-inner flowers-inner">
+
+<div class="bouquet">💐</div>
+
+<p class="flowers-note">You deserve the whole world. 🌍❤️</p>
+
+<button class="gift-final-btn" id="closeFinalGift">Close Gift</button>
+
+</div>
+
+</div>
+
+<!-- ========================= 
+ENDING SCREEN 
+========================== -->
+
+<div id="endingScreen">
+
+<div id="endingPetals"></div>
+
+<video id="endingFlowers"
+       muted
+       playsinline
+       loop>
+
+    <source src="assets/videos/end.mp4"
+            type="video/mp4">
+
+</video>
+
+<div class="ending-content">
+
+<h1>Thank you for everything ❤️</h1>
+
+<p class="ending-countdown-label">Since you entered my life</p>
+
+<div id="countdown"></div>
+
+<button id="replayStory">Replay ↺</button>
+
+</div>
+
+</div>
+
+<footer>
+
+Made with endless love ❤️
+
+</footer>
+
+</div>
+
+<!-- =========================
+MUSIC PLAYER
+========================== -->
+
+<div
+class="music-player"
+id="musicPlayer">
+
+<button
+id="musicPlayBtn">
+
+▶
+
+</button>
+
+<div>
+
+<div>
+
+So This Is Love
+
+</div>
+
+<small>
+
+Our Song
+
+</small>
+
+</div>
+
+</div>
+
+<!-- =========================
+ADMIN
+========================== -->
+
+<button
+class="admin-toggle">
+
+⚙
+
+</button>
+
+<div id="adminPanel">
+
+<div class="admin-box" id="adminLoginBox">
+
+<h2>
+
+Enter Password 🔒
+
+</h2>
+
+<label>
+
+Password
+
+</label>
+
+<input
+type="password"
+id="adminPasswordInput"
+placeholder="......">
+
+<button id="adminLoginBtn">
+
+Unlock ❤️
+
+</button>
+
+<p class="error"
+   id="adminLoginError"
+   style="display:none;">
+
+Wrong password, try again.
+
+</p>
+
+</div>
+
+<div class="admin-box"
+     id="adminContentBox"
+     style="display:none;">
+
+<h2>
+
+Manage Memories
+
+</h2>
+
+<label>
+
+Title
+
+</label>
+
+<input
+type="text"
+id="memoryTitle">
+
+<label>
+
+Description
+
+</label>
+
+<textarea
+id="memoryDescription">
+
+</textarea>
+
+<label>
+
+Choose Image
+
+</label>
+
+<input
+type="file"
+id="memoryImage"
+accept="image/*">
+
+<img
+id="imagePreview"
+style="display:none;max-width:100%;border-radius:15px;margin-top:15px;">
+
+<button
+id="uploadBtn">
+
+Upload Memory ❤️
+
+</button>
+
+<hr>
+
+<div id="memoryList">
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================
+SUPABASE
+========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/config.js"></script>
+
+<script src="js/supabase.js"></script>
+
+<script src="js/memories.js"></script>
+
+<script src="js/gifts.js"></script>
+
+<script src="js/admin.js"></script>
+
+<script src="js/animations.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
